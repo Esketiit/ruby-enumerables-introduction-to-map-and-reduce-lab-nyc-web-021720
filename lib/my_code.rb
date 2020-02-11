@@ -64,6 +64,17 @@ def reduce_to_all_true (array)
       return false
     end
   end
-  
+
   return true
+end
+
+def reduce_to_any_true (array)
+  array.each do |value|
+
+    if (value)
+      return true
+    end
+  end
+
+  return false
 end
